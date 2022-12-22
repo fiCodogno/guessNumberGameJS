@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Mario";
+    src: url("Super Mario Bros. 2.ttf") format("TrueType");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    background-color: #090909;
+    font-family: "Mario", sans-serif;
+    text-shadow: 2px 2px #090909;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    line-height: 1.5;
+}
+
+.game {
+    width: 440px;
+    display: grid;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 25px;
+    background: url("../images/game-background.jpg") center no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.game-health {
+    position: relative;
+    width: 200px;
+    height: 25px;
+    border: 2px solid white;
+    margin-left: auto;
+}
+
+.game-health-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+}
+
+.game-health-bar {
+    width: 100%;
+    height: 100%;
+    background-color: forestgreen;
+}
+
+.game-title {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.game-number {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 75px;
+    font-size: 42px;
+    color: #CE4B05;
+    margin: 20px auto;
+    background: url("../images/game-mistery-box.png") center no-repeat;
+    background-size: cover;
+}
+
+.game-feedback {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.game footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.game-guess {
+    grid-column: 1/-1;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+input, button {
+    background: none;
+    font: inherit;
+    color: inherit;
+    border: none;
+}
+
+.game-button {
+    padding: 10px 15px;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+}
+
+.game-button-play {
+    color: white;
+    font-family: "Mario", sans-serif;
+    text-transform: uppercase;
+    background-color: forestgreen;
+}
+
+.game-button-reset {
+    color: white;
+    font-family: "Mario", sans-serif;
+    text-transform: uppercase;
+    background-color: blue;
+}
